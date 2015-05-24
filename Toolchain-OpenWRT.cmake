@@ -58,7 +58,7 @@ string(REGEX REPLACE "CONFIG_LIBC=\"(.*)\"" "\\1" openwrt_libc ${_dummy})
 string(REGEX MATCH "CONFIG_LIBC_VERSION=\"[a-zA-Z0-9.]+\"" _dummy ${_openwrt_config})
 string(REGEX REPLACE "CONFIG_LIBC_VERSION=\"(.*)\"" "\\1" openwrt_libc_version ${_dummy})
 
-string(REGEX MATCH "CONFIG_GCC_VERSION=\"[a-zA-Z0-9.+]+\"" _dummy ${_openwrt_config})
+string(REGEX MATCH "CONFIG_GCC_VERSION=\"[a-zA-Z0-9.+-]+\"" _dummy ${_openwrt_config})
 string(REGEX REPLACE "CONFIG_GCC_VERSION=\"(.*)\"" "\\1" openwrt_gcc_version ${_dummy})
 
 message(STATUS "ARCH         '${openwrt_arch}'")
