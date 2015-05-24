@@ -71,8 +71,8 @@ message(STATUS "GCC'         '${openwrt_gcc_version}'")
 
 set(openwrt_system       "linux")
 
-set(openwrt_toolchain "toolchain-${openwrt_arch}_r2_gcc-${openwrt_gcc_version}_${openwrt_libc}-${openwrt_libc_version}")
-set(openwrt_target    "target-${openwrt_arch}_r2_${openwrt_libc}-${openwrt_libc_version}")
+set(openwrt_toolchain "toolchain-${openwrt_arch}_24kec+dsp_gcc-${openwrt_gcc_version}_${openwrt_libc}-${openwrt_libc_version}")
+set(openwrt_target    "target-${openwrt_arch}_24kec+dsp_${openwrt_libc}-${openwrt_libc_version}")
 set(_openwrt_c_compiler  "${openwrt_arch}-openwrt-${openwrt_system}-gcc")
 set(_openwrt_cxx_compiler  "${openwrt_arch}-openwrt-${openwrt_system}-g++")
 
